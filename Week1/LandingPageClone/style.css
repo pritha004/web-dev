@@ -57,14 +57,187 @@
 .banner{
     height: 650px;
     width: 100%;
-    background-image: url(https://coppercowcoffee.com/cdn/shop/files/CCC-Web-Hero-Debbie.jpg?v=1672955633&width=2400);
+    position: relative;
+}
+
+.gradient{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, black, transparent);
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+.banner img{
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    background-position: left;
 }
 
 .banner h1{
+    font-weight: bolder;
+    font-size: 60px;
     color: #ffffff;
-    
+    position: absolute;
+    top: 60%;
+    z-index: 10;
+    padding: 2rem 4rem;
+}
+
+.banner h1 span{
+    display: block;
+}
+
+.properties{
+    padding-top: 2rem;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 12rem 2rem 12rem;
+}
+
+.box{
+    height: 10%;
+    width: 40%;
+}
+
+.box span{
+    display: block;
+    font-size: 18px ;
+}
+
+.box #heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: #266041;
+}
+
+.boxImg{
+    height: 10%;
+    width: 60%;
+}
+
+.boxImg img{
+    height: 100%;
+    width: 100%;
+}
+
+.press #heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: #266041;
+    text-align: center;
+}
+
+.press div{
+    padding: 2rem 16rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.press div span{
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(97, 124, 97);
+}
+
+.whatWeAreSipping #heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: #266041;
+    text-align: center;
+}
+
+.whatWeAreSipping .cards{
+    padding: 1rem 8rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+}
+
+.card img{
+    height: 60%;
+    width: 100%;
+}
+
+.card .info{
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card button{
+    padding: 1rem 4rem;
+    width: 100%;
+    background-color: #266041;
+    color: white;
+    font-weight: bold;
+    border-radius: 40px;
+    border: 1px solid #266041;
+}
+
+.sustainablySourced{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 12rem 2rem 12rem;
+}
+
+.sustainablySourced #heading{
+    font-size: 40px;
+    font-weight: bold;
+    color: #266041;
+}
+
+.footer{
+    background-color: #266041;
+    color: white;
+    margin-bottom: 2rem;
+    padding: 4rem 0 8rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer li{
+    list-style: none;
+    padding: 0.5rem 0;
+}
+
+.footer li input{
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 1rem 1rem;
+    width: 70%;
+}
+
+.footer li input::placeholder{
+    color: white;
+}
+
+.footer li button{
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    width: 30%;
+    color: white;
 }
 
 @media only screen and (min-width: 590px) {
